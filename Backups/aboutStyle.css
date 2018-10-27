@@ -1,0 +1,232 @@
+body {
+  overflow-y: scroll;
+    overflow-x: auto;
+    font-family: poiret;
+    color: black;
+    padding:0;
+    margin:0;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+@font-face {
+    font-family: poiret;
+    src: url(PoiretOne-Regular.ttf);
+}
+#productHeading {
+    font-size: 100px;
+    font-weight: bold;
+}
+#productDiv {
+    opacity: 0;
+    background-color: #fed36a;
+    padding:100px;
+}
+#productParagraph {
+    font-size: 50px;
+}
+#topUList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    border:0;
+    display:inline-block;
+}
+#navigationDiv{
+    opacity: 0;
+    font-family: poiret;
+    overflow:auto;
+}
+#topList{
+    float: left;
+    display:inline;
+}
+#logo{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+#topLink{
+    font-size: 29px;
+    display:inline;
+}
+#topLink: hover{
+    text-decoration: none;
+}
+#navigationDiv{
+    color: black;
+    overflow: visible;
+}
+#topList #topLink{
+    position: relative;
+    display:inline-block;
+    color:white;
+    padding: 23px;
+    text-decoration: none;
+    border-color: #34602f;
+}
+#topList #topLink:hover{
+    cursor: pointer;
+}
+@font-face {
+    font-family: navFont;
+    src: url(Intro.otf)
+}
+.homeNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.aboutNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.contactNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.dropdown {
+    position: absolute;
+    display: block;
+    z-index: 999;
+}
+.dropdown-content {
+    display: none;
+    position:absolute;
+    z-index: 999;
+}
+
+#dropdown{
+    font-family: navFont;
+    font-size:45px;
+    color:black;
+    z-index: 999;
+    position:relative;
+}
+.dropdownmenu{
+    z-index: 999;
+}
+span{
+    text-decoration: none;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+footer{
+        position: absolute;
+        left: 0;
+        height: auto;
+        width: 100%;
+        overflow:hidden;
+        padding:0;
+}
+#productNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top:3px;
+    padding-left:17px;
+    font-family: navFont;
+}
+.charityNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+#front {
+    height: 600px;
+    max-height: 600px;
+    text-align: center;
+}
+#backpack {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+#productSizes {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+.item {
+    height: 600px;
+}
+.active item {
+    height: 600px;
+}
+#bottom{
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+}
+#vei{
+    float: right;
+    bottom:0;
+    right:0;
+}
+.col-sm-6{
+    align-items: center;
+}
+button{
+    display: block;
+	font-family: poiret;
+    background-color: #34602f;
+    font-size: 30px;
+	font-weight: bolder;
+    padding: 10px 15px;
+	margin: 20px auto;
+    border-color: maroon;
+    color: black;
+    text-shadow: 0 -1px 0 #000;
+	box-shadow: 0 10px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+}
+button:active
+{
+	box-shadow: 0 5px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+}
+#aboutHeading{
+    font-size: 100px;
+}
+h1{
+    font-size: 75px;
+    text-align: center;
+    font-weight: 900;
+}
+h2{
+    font-size: 50px;
+    font-weight:600;
+}
+#statement{
+    background: url("mountain.png") no-repeat center center fixed;
+    z-index: 0;
+    background-size: cover;
+    padding:170px;
+}
+#what{
+    background: url("beach.png") no-repeat center center fixed;
+    background-size: cover;
+    padding:160px;
+}
+#behind{
+    background: url("city.png")no-repeat center center fixed;
+    background-size: cover;
+    height:1012px;
+    padding:180px;
+}
+#us{
+    position:absolute;
+    float:right;
+}

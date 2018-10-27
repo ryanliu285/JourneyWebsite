@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Journey | Exploration Awaits You</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="marigold.css"/>
+      <script src="functions.js"></script>
+      <script>
+         $(document).ready(function(){
+             $("#navigationDiv").offset({top:$(window).scrollTop()}); 
+             $("#navigationDiv").fadeTo(1000, 1, function () {});
+             $("#productDiv").fadeTo(1000, 1 , function() {});
+             $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".productNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+             $(".productNav").stop(true,true).fadeTo(2500,1,function(){});
+             $(".aboutNav").stop(true,true).fadeTo(3500,1,function(){});
+             $(".charityNav").stop(true,true).fadeTo(4500,1,function(){});
+             $(".contactNav").stop(true,true).fadeTo(5500,1,function(){});
+         });
+         fadeScroll('#navigationDiv',true);
+         var hovered = false;
+      </script>
+      <link rel="icon" type="image/png" href="logo.png">
+   </head>
+   <body>
+      <div id = "navigationDiv">
+         <a href= "index.html"><img src ="logo.png" alt = "Logo and Slogan" style = "width: 100px; height: 84px;" id = "logo"></a>
+         <nav>
+            <ul id =  "topUList">
+               <li id = topList><a id = "topLink" class="homeNav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+               <li id = topList><a id = "topLink" class="productNav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+               <li id = topList><a id = "topLink" class="aboutNav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+               <li id = topList><a id = "topLink" class="charityNav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+               <li id = topList><a id = "topLink" class="contactNav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+         </nav>
+      </div>
+      <script>
+         $(window).scroll(function(){
+             $("#navigationDiv").offset({top:$(window).scrollTop()});
+         });
+         $(".homeNav").click(function() {
+             if(!hovered){
+                $(".homeNav").stop(true,true).fadeTo(100,1,function(){});
+                $(".productNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+                setTimeout( function() { window.location = 'index.html' }, 100 );
+                hovered = true;    
+             }
+         });
+         $(".productNav").click(function() {
+             if(!hovered){
+                $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".productNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+                $(".productNav").stop(true,true).fadeTo(2500,1,function(){});
+                setTimeout( function() { window.location = 'products.html' }, 1000 );
+                hovered = true;
+             }
+         });
+         $(".contactNav").click(function() {
+             if(!hovered){
+                $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".productNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+                $(".productNav").stop(true,true).fadeTo(2500,1,function(){});
+                $(".aboutNav").stop(true,true).fadeTo(3500,1,function(){});
+                $(".charityNav").stop(true,true).fadeTo(4500,1,function(){});
+                $(".contactNav").stop(true,true).fadeTo(5500,1,function(){});
+                setTimeout( function() { window.location = 'contactUs.html' }, 2000 );
+                hovered = true;
+             }
+         });
+         $(".aboutNav").click(function() {
+             if(!hovered){
+                $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".productNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+                $(".productNav").stop(true,true).fadeTo(2500,1,function(){});
+                $(".aboutNav").stop(true,true).fadeTo(3500,1,function(){});
+                $(".charityNav").stop(true,true).fadeTo(4500,0,function(){});
+                $(".contactNav").stop(true,true).fadeTo(5500,0,function(){});
+                setTimeout( function() { window.location = 'about.html' }, 2000 );
+                hovered = true;
+             }
+         });
+         $(".charityNav").click(function() {
+             if(!hovered){
+                $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".productNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+                $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+                $(".productNav").stop(true,true).fadeTo(2500,1,function(){});
+                $(".aboutNav").stop(true,true).fadeTo(3500,1,function(){});
+                $(".charityNav").stop(true,true).fadeTo(4500,1,function(){});
+                $(".contactNav").stop(true,true).fadeTo(5500,0,function(){});
+                setTimeout( function() { window.location = 'charity.html' }, 2000 );
+                hovered = true;
+             }
+         });
+      </script>
+      <script>
+         $(window).scroll(function(){
+         $("#navigationDiv").offset({top:$(window).scrollTop()});
+         });
+      </script>
+      <div id = "head">
+         <h1 id = "headTitle">Marigold</h1>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+         <img src = "marigoldBackpack.png" id = "backpack"> 
+      </div>
+       <div id = "desc">
+           <h1 id = "descText">Uplift spirits with the marigold packs! Vividly express your creativity and reach a positive, optimistic environment through activities such as art gallery walks, painting, and music by artists such as Sia, Fleetwood Mac, and Elton John.</h1>
+       </div>
+       <div id = "end">
+            <h1 id = "like">Like the product? Click the buy button below! If not, feel free to return to the learn section.</h1>
+            <div class = "row">
+              <div class = "col-sm-6">
+                  <a href = "marigoldSizes.html"><button id = "buy">Buy Now</button></a>
+              </div>
+              <div class = "col-sm-6">
+                  <a href="learn.html"><button id = "learn">Back to Learn</button></a>
+              </div>
+          </div>
+       </div>
+      <footer>
+        <br>
+         <div class = 'row'>
+                <p id = "bottom">&nbsp;&nbsp;&nbsp;Virtual Enterprises</p>
+                <br>
+                <p id = "bottom">&nbsp;&nbsp;&nbsp;This is an official Virtual Enterprises International firm website for educational purposes only for 2017-2018 - "Journey"</p>
+            <div class = 'col-sm-9'>
+                <p id = "bottom">&nbsp;South Pasadena, CA</p>
+                <p id = "bottom">(626)-441-5820&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journey.vei@gmail.com</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p id = "bottom">© Journey, 2017 - South Pasadena High School</p>
+            </div> 
+            <div class = 'col-sm-3'>
+                <img src = "vei.png" style="height:70px;width:70px;" id = "vei"><!--277x277-->
+            </div> 
+        </div>
+      </footer>
+   </body>
+</html>

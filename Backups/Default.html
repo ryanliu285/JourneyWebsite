@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+   <head lang = "en">
+      <meta charset="UTF-8">
+      <title>Journey | Exploration Awaits You</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="homeStyle.css"/>
+      <script src="functions.js"></script>
+      <script>
+         $(document).ready(function(){
+            $("#navigationDiv").fadeTo(1000, 1, function () {});
+             $(".dropdown").fadeTo(1000, 1, function () {});
+            $("#images").fadeTo(1000, 1, function () {});
+            $("#introduction").fadeTo(1000, 1, function () {});
+            $("#journeyCompassDiv").fadeTo(3000,1,function(){});
+             $("#slogan").fadeTo(3000, 1, function () {});
+             $(".row").fadeTo(3000,1,function(){});
+            $("#mainTitle").fadeTo(3000, 1, function () {});
+            $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+            $("#productNav").stop(true,true).fadeTo(100,0,function(){});
+            $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+            $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+            $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+            $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+            $("#productNav").stop(true,true).fadeTo(2500,1,function(){});
+            $(".aboutNav").stop(true,true).fadeTo(3500,1,function(){});
+            $(".charityNav").stop(true,true).fadeTo(4500,1,function(){});
+            $(".contactNav").stop(true,true).fadeTo(5500,1,function(){});
+         });
+         fadeScroll('#navigationDiv', true);
+         fadeScroll('#mainTitle', true);
+         fadeScroll('#slogan', true);
+         fadeScroll('#personalityHeading', false);
+         fadeScroll('#personalityButton', false);
+         fadeScroll('#introductionTitle', false);
+         fadeScroll('#whyTitle', false);
+         fadeScroll('#whyText', false);
+         fadeScroll('#introductionText', false);
+         var hovered = false;
+      </script>
+      <link rel="icon"
+         type="image/png"
+         href="logo.png"
+            style = "width: 136px;height:132px;">
+   </head>
+   <body>
+     <div id = "navigationDiv">
+        <a href= "index.html"><img src ="logo.png" alt = "Logo and Slogan" style = "width: 100px; height: 84px;" id = "logo"></a>
+        <nav>
+           <ul id =  "topUList">
+              <li id = topList><a id = "topLink" href="index.html"><p class = "homeNav">Home</p></a></li>
+
+              <li id = "topList">
+                  <div class="dropdown">
+                      &nbsp;
+                      <a class="dropdown-toggle" id="menu1" data-toggle="dropdown" href = "products.html"><p id= "productNav">Products</p></a>
+                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="ember.html"><p class = "homeNav">Ember</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="marigold.html"><p class = "homeNav">Marigold</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="cobalt.html"><p class = "homeNav">Cobalt</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="amazon.html"><p class = "homeNav">Amazon</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="spark.html"><p class = "homeNav">Spark</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="twilight.html"><p class = "homeNav">Twilight</p></a></li>
+                   </ul>
+                  </div>
+               </li>
+<li id = topList> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id = "topLink" class="aboutNav" href = "about.html"><p class = "homeNav">About</p></a></li>              <li id = topList><a id = "topLink" class="charityNav" href="charity.html"><p class = "homeNav">Charity</p></a></li>
+              <li id = topList><a id = "topLink" class="contactNav"href="contact.html"><p class = "homeNav">Contact Us!</p></a></li>
+           </ul>
+        </nav>
+     </div>
+     <script>
+             var state = false;
+             $("#productNav").on("click",function(){
+                 state = !state;
+                 if(state){
+                   $("#dropdown-menu").slideToggle(200);/*
+                     $("#navigationDiv").animate({height:500},200);
+                     $("#dropdown").animate({height:300},200);*/
+                   console.log("toggled");
+                 }
+           });
+     </script>
+      <footer>
+         <div class = 'row'>
+                <p id = "bottom">&nbsp;&nbsp;&nbsp;Virtual Enterprises</p>
+                <br>
+                <p id = "bottom">&nbsp;&nbsp;&nbsp;This is an official Virtual Enterprises International firm website for educational purposes only for 2017-2018 - "Journey"</p>
+            <div class = 'col-sm-9'>
+                <p id = "bottom">&nbsp;South Pasadena, CA</p>
+                <p id = "bottom">(626)-441-5820&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journey.vei@gmail.com</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p id = "bottom">© Journey, 2017 - South Pasadena High School</p>
+            </div>
+            <div class = 'col-sm-3'>
+                <img src = "vei.png" style="height:70px;width:70px;" id = "vei"><!--277x277-->
+            </div>
+        </div>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,292 @@
+body {
+    background: url("sparkBack.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: poiret;
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+@font-face {
+    font-family: poiret;
+    src: url(PoiretOne-Regular.ttf);
+}
+#productDiv {
+    opacity: 0;
+    background-color: #fed36a;
+    padding:100px;
+}
+#productParagraph {
+    font-size: 50px;
+}
+#emberHeading {
+    font-size: 100px;
+    color: firebrick;
+    font-weight: bold;
+}
+#marigoldHeading {
+    font-size: 100px;
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+#amazonHeading {
+    font-size: 100px;
+    color: forestgreen;
+    font-weight: bold;
+}
+#twilightHeading {
+    font-size: 100px;
+    color: grey;
+    font-weight: bold;
+}
+#sparkHeading {
+    font-size: 100px;
+    color: darkorange;
+    font-weight: bold;
+}
+#cobaltHeading {
+    font-size: 100px;
+    color: darkblue;
+    font-weight: bold;
+}
+#emberDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: firebrick;
+}
+#cobaltDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: dodgerblue;
+}
+#marigoldDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: darkgoldenrod;
+}
+#amazonDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: forestgreen;
+}
+#sparkDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: darkorange;
+}
+#twilightDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: grey;
+}
+#front {
+    height: 600px;
+    max-height: 600px;
+    text-align: center;
+}
+#backpack {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+#productSizes {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+.item {
+    height: 600px;
+}
+.active item {
+    height: 600px;
+}
+#bottom{
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+}
+#vei{
+    float: right;
+    bottom:0;
+    right:0;
+}
+.col-sm-6{
+    align-items: center;
+}
+button{
+    display: block;
+	font-family: poiret;
+    background-color: #34602f;
+    font-size: 30px;
+	font-weight: bolder;
+    padding: 10px 15px;
+	margin: 20px auto;
+    border-color: maroon;
+    color: black;
+    text-shadow: 0 -1px 0 #000;
+	box-shadow: 0 10px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+}
+button:active
+{
+	box-shadow: 0 5px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+}
+#head{
+    height: 1000px;
+    padding:80px;
+}
+h1{
+    font-size: 200px;
+    font-weight: 900;
+    color:orange;
+    text-align: center;
+}
+backpack{
+    text-align: center;
+}
+#descText{
+    font-size:80px;
+    font-weight:600;
+    max-width: 98%;
+    color:white;
+}
+#desc{
+    padding:180px;
+    background-size: cover;
+}
+#like{
+    font-size:80px;
+    color:white;
+}
+#end{
+    padding:180px;
+    background-size: cover;
+}
+/* NOTE: Footer New*/
+footer{
+        position: absolute;
+        left: 0;
+        height: auto;
+        width: 100%;
+        overflow:hidden;
+        padding:0;
+}
+/* NOTE: Navigation Bar */
+#topUList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    border:0;
+    display:inline-block;
+}
+#navigationDiv{
+    font-family: poiret;
+    overflow:auto;
+}
+#topList{
+    float: left;
+    display:inline;
+}
+#logo{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+#topLink{
+    font-size: 29px;
+    display:inline;
+}
+#topLink: hover{
+    text-decoration: none;
+}
+#navigationDiv{
+    color: black;
+    overflow: visible;
+}
+#topList #topLink{
+    position: relative;
+    display:inline-block;
+    color:white;
+    padding: 23px;
+    text-decoration: none;
+    border-color: #34602f;
+}
+#topList #topLink:hover{
+    cursor: pointer;
+}
+@font-face {
+    font-family: navFont;
+    src: url(Intro.otf)
+}
+.homeNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.aboutNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.contactNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.dropdown {
+    position: absolute;
+    display: block;
+    z-index: 999;
+}
+.dropdown-content {
+    display: none;
+    position:absolute;
+    z-index: 999;
+}
+
+#dropdown{
+    font-family: navFont;
+    font-size:45px;
+    color:black;
+    z-index: 999;
+    position:relative;
+}
+.dropdownmenu{
+    z-index: 999;
+}
+span{
+    text-decoration: none;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+#productNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top:3px;
+    padding-left:17px;
+    font-family: navFont;
+}
+#goBack{
+  font-size:50px;
+  font-weight:900;
+}
+.row1{
+  text-align:center;
+}

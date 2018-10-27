@@ -1,0 +1,1062 @@
+<!DOCTYPE HTML>
+<html>
+   <head lang = "en">
+      <meta charset="UTF-8">
+      <title>Journey | Exploration Awaits You</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="quizStyle.css"/>
+      <script src="functions.js"></script>
+      <!-- <script src="quizFunctions.js"></script> -->
+      <script>
+        var cobalt =0;
+        var marigold = 0;
+        var ember = 0;
+        var twilight = 0;
+        var amazon = 0;
+        var spark = 0;
+        var clicked = false;
+         $(document).ready(function(){
+            $("#navigationDiv").fadeTo(1000, 1, function () {});
+             $(".dropdown").fadeTo(1000, 1, function () {});
+            $("#images").fadeTo(1000, 1, function () {});
+            $("#introduction").fadeTo(1000, 1, function () {});
+            $("#journeyCompassDiv").fadeTo(3000,1,function(){});
+             $("#slogan").fadeTo(3000, 1, function () {});
+             $(".row").fadeTo(3000,1,function(){});
+            $("#mainTitle").fadeTo(3000, 1, function () {});
+            $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+            $("#productNav").stop(true,true).fadeTo(100,0,function(){});
+            $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+            $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+            $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+            $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+            $("#productNav").stop(true,true).fadeTo(2500,1,function(){});
+            $(".aboutNav").stop(true,true).fadeTo(3500,1,function(){});
+            $(".charityNav").stop(true,true).fadeTo(4500,1,function(){});
+            $(".contactNav").stop(true,true).fadeTo(5500,1,function(){});
+            $("#second").hide();
+            $("#third").hide();
+            $("#fourth").hide();
+            $("#fifth").hide();
+            $("#sixth").hide();
+            $("#seventh").hide();
+            $("#eighth").hide();
+            $("#ninth").hide();
+            $("#tenth").hide();
+            $("#result").hide();
+         });
+         fadeScroll('#navigationDiv', true);
+         fadeScroll('#mainTitle', true);
+         fadeScroll('#slogan', true);
+         fadeScroll('#personalityHeading', false);
+         fadeScroll('#personalityButton', false);
+         fadeScroll('#introductionTitle', false);
+         fadeScroll('#whyTitle', false);
+         fadeScroll('#whyText', false);
+         fadeScroll('#introductionText', false);
+         var hovered = false;
+      </script>
+      <link rel="icon"
+         type="image/png"
+         href="logo.png"
+            style = "width: 136px;height:132px;">
+   </head>
+   <body>
+     <div id = "navigationDiv">
+        <a href= "index.html"><img src ="logo.png" alt = "Logo and Slogan" style = "width: 100px; height: 84px;" id = "logo"></a>
+        <nav>
+           <ul id =  "topUList">
+              <li id = topList><a id = "topLink" href="index.html"><p class = "homeNav">Home</p></a></li>
+
+              <li id = "topList">
+                  <div class="dropdown">
+                      &nbsp;
+                      <a class="dropdown-toggle" id="menu1" data-toggle="dropdown" href = "products.html"><p id= "productNav">Products</p></a>
+                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="ember.html"><p class = "homeNav">Ember</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="marigold.html"><p class = "homeNav">Marigold</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="cobalt.html"><p class = "homeNav">Cobalt</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="amazon.html"><p class = "homeNav">Amazon</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="spark.html"><p class = "homeNav">Spark</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="twilight.html"><p class = "homeNav">Twilight</p></a></li>
+                   </ul>
+                  </div>
+               </li>
+<li id = topList> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id = "topLink" class="aboutNav" href = "about.html"><p class = "homeNav">About</p></a></li>              <li id = topList><a id = "topLink" class="charityNav" href="charity.html"><p class = "homeNav">Charity</p></a></li>
+              <li id = topList><a id = "topLink" class="contactNav"href="contact.html"><p class = "homeNav">Contact Us!</p></a></li>
+           </ul>
+        </nav>
+     </div>
+     <script>
+             var state = false;
+             $("#productNav").on("click",function(){
+                 state = !state;
+                 if(state){
+                   $("#dropdown-menu").slideToggle(200);/*
+                     $("#navigationDiv").animate({height:500},200);
+                     $("#dropdown").animate({height:300},200);*/
+                   console.log("toggled");
+                 }
+           });
+     </script>
+     <div id = "first">
+       <br>
+        <div id = "question"><h1 id = "title">How comfortable are you with exploring new activities, locations, novelities etc?</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "1option1">Not Very Comfortable</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "1option2">Indifferent</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "1option3">Very Comfortable</h1>
+            </div>
+        </div>
+        <script>
+          $("#1option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              cobalt++;
+              console.log("cobalt : "+cobalt);
+              $("#first").fadeOut();
+              $("#second").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#1option2").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              twilight++;
+              marigold++;
+              amazon++;
+              console.log("twilight: "+twilight);
+              console.log("amazon: "+amazon);
+              console.log("marigold: "+marigold);
+              $("#first").fadeOut();
+              $("#second").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#1option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              ember++;
+              spark++;
+              console.log("ember: "+ember);
+              console.log("spark: "+spark);
+              $("#first").fadeOut();
+              $("#second").fadeIn(1400);
+              clicked = false;
+            }
+          });
+        </script>
+     </div>
+     <div id = "second">
+       <br>
+        <div id = "question"><h1 id = "title">Would you describe yourself as more</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "2option1">Introverted?</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1>Or</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "2option3">Extroverted?</h1>
+            </div>
+        </div>
+        <script>
+          $("#2option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              twilight++;
+              marigold++;
+              amazon++;
+              console.log("twilight: "+twilight);
+              console.log("amazon: "+amazon);
+              console.log("marigold: "+marigold);
+              $("#second").fadeOut();
+              $("#third").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#2option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              ember++;
+              spark++;
+              cobalt++;
+              console.log("ember: "+ember);
+              console.log("spark: "+spark);
+              console.log("cobalt: "+cobalt);
+              $("#second").fadeOut();
+              $("#third").fadeIn(1400);
+              clicked = false;
+            }
+          });
+        </script>
+     </div>
+     <div id = "third">
+       <br>
+        <div id = "question"><h1 id = "title">What component in music do you pay the most attention to?</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "3option1">bass</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "3option2">instrumental</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "3option3">lyrics</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "3option4">popularity</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "3option5">all</h1>
+            </div>
+        </div>
+        <script>
+          $("#3option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              spark++;
+              console.log("spark: "+spark);
+              $("#third").fadeOut();
+              $("#fourth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#3option2").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              cobalt++;
+              amazon++;
+              console.log("amazon: "+amazon);
+              console.log("cobalt: "+cobalt);
+              $("#third").fadeOut();
+              $("#fourth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#3option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              twilight++;
+              console.log("twilight: "+twilight);
+              $("#third").fadeOut();
+              $("#fourth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#3option4").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              spark++;
+              console.log("spark: "+spark);
+              $("#third").fadeOut();
+              $("#fourth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#3option5").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              marigold++;
+              ember++;
+              console.log("ember: "+ember);
+              console.log("marigold: "+marigold);
+              $("#third").fadeOut();
+              $("#fourth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+        </script>
+     </div>
+     <div id = "fourth">
+       <br>
+        <div id = "question"><h1 id = "title">Which do you prefer?</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "4option1">Indoors</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1>Or</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "4option3">Outdoors</h1>
+            </div>
+        </div>
+        <script>
+          $("#4option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              twilight++;
+              marigold++;
+              console.log("twilight: "+twilight);
+              console.log("marigold: "+marigold);
+              $("#fourth").fadeOut();
+              $("#fifth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#4option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              ember++;
+              spark++;
+              cobalt++;
+              amazon++;
+              console.log("amazon: "+amazon);
+              console.log("ember: "+ember);
+              console.log("spark: "+spark);
+              console.log("cobalt: "+cobalt);
+              $("#fourth").fadeOut();
+              $("#fifth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+        </script>
+     </div>
+     <div id = "fifth">
+       <br>
+        <div id = "question"><h1 id = "title">Which do you prefer?</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+          <div class = "col-sm-3">
+            <h1 class = "option" id = "5option1">concerts</h1>
+          </div>
+          <div class = "col-sm-3">
+            <h1 class = "option" id = "5option2">home</h1>
+          </div>
+          <div class = "col-sm-3">
+            <h1 class = "option" id = "5option3">museums</h1>
+          </div>
+          <div class = "col-sm-3">
+            <h1 class = "option" id = "5option4">beach</h1>
+          </div>
+        </div>
+        <script>
+        $("#5option1").on("click", function(){
+          if(!clicked){
+            clicked = true;
+            spark++;
+            ember++;
+            console.log("ember: "+ember);
+            console.log("spark: "+spark);
+            $("#fifth").fadeOut();
+            $("#sixth").fadeIn(1400);
+            clicked = false;
+          }
+        });
+        $("#5option2").on("click", function(){
+          if(!clicked){
+            clicked = true;
+            cobalt++;
+            console.log("cobalt: "+cobalt);
+            $("#fifth").fadeOut();
+            $("#sixth").fadeIn(1400);
+            clicked = false;
+          }
+        });
+        $("#5option3").on("click", function(){
+          if(!clicked){
+            clicked = true;
+            twilight++;
+            marigold++;
+            console.log("marigold: "+marigold);
+            console.log("twilight: "+twilight);
+            $("#fifth").fadeOut();
+            $("#sixth").fadeIn(1400);
+            clicked = false;
+          }
+        });
+        $("#5option4").on("click", function(){
+          if(!clicked){
+            clicked = true;
+            amazon++;
+            console.log("amazon: "+amazon);
+            $("#fifth").fadeOut();
+            $("#sixth").fadeIn(1400);
+            clicked = false;
+          }
+        });
+        </script>
+     </div>
+     <div id = "sixth">
+       <br>
+        <div id = "question"><h1 id = "title">Do you enjoy social gatherings?</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "6option1">Yes</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1>Or</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "6option3">No</h1>
+            </div>
+        </div>
+        <script>
+          $("#6option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              twilight++;
+              marigold++;
+              amazon++;
+              console.log("twilight: "+twilight);
+              console.log("amazon: "+amazon);
+              console.log("marigold: "+marigold);
+              $("#sixth").fadeOut();
+              $("#seventh").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#6option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              ember++;
+              spark++;
+              cobalt++;
+              console.log("ember: "+ember);
+              console.log("spark: "+spark);
+              console.log("cobalt: "+cobalt);
+              $("#sixth").fadeOut();
+              $("#seventh").fadeIn(1400);
+              clicked = false;
+            }
+          });
+        </script>
+     </div>
+     <div id = "seventh">
+       <br>
+        <div id = "question"><h1 id = "title">What do you spend the most money on?</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "7option1">Things I need</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "7option2">Things I want</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "7option3">others</h1>
+            </div>
+        </div>
+        <script>
+          $("#7option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              cobalt++;
+              twilight++;
+              console.log("twilight: "+twilight);
+              console.log("cobalt : "+cobalt);
+              $("#seventh").fadeOut();
+              $("#eighth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#7option2").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              marigold++;
+              ember++;
+              spark++;
+              console.log("ember: "+ember);
+              console.log("spark: "+spark);
+              console.log("marigold: "+marigold);
+              $("#seventh").fadeOut();
+              $("#eighth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#7option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              amazon++;
+              console.log("amazon: "+amazon);
+              $("#seventh").fadeOut();
+              $("#eighth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+        </script>
+     </div>
+     <div id = "eighth">
+       <br>
+        <div id = "question"><h1 id = "title">Do you think most with</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "8option1">mind</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1>Or</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "8option3">heart?</h1>
+            </div>
+        </div>
+        <script>
+          $("#8option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              twilight++;
+              cobalt++;
+              amazon++;
+              console.log("twilight: "+twilight);
+              console.log("amazon: "+amazon);
+              console.log("cobalt: "+cobalt);
+              $("#eighth").fadeOut();
+              $("#ninth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#8option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              ember++;
+              spark++;
+              marigold++;
+              console.log("marigold: "+marigold);
+              console.log("ember: "+ember);
+              console.log("spark: "+spark);
+              $("#eighth").fadeOut();
+              $("#ninth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+        </script>
+     </div>
+     <div id = "ninth">
+       <br>
+        <div id = "question"><h1 id = "title">On an ideal day I would</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "9option1">Spend time with family</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "9option2">Go out</h1>
+            </div>
+            <div class = "col-sm-4">
+              <h1 class = "option" id = "9option3">Stay at home</h1>
+            </div>
+        </div>
+        <script>
+          $("#9option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              cobalt++;
+              twilight++;
+              console.log("twilight: "+twilight);
+              console.log("cobalt : "+cobalt);
+              $("#ninth").fadeOut();
+              $("#tenth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#9option2").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              ember++;
+              spark++;
+              console.log("ember: "+ember);
+              console.log("spark: "+spark);
+              $("#ninth").fadeOut();
+              $("#tenth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+          $("#9option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              amazon++;
+              marigold++;
+              console.log("amazon: "+amazon);
+              console.log("marigold: "+marigold);
+              $("#ninth").fadeOut();
+              $("#tenth").fadeIn(1400);
+              clicked = false;
+            }
+          });
+        </script>
+     </div>
+     <div id = "tenth">
+       <br>
+        <div id = "question"><h1 id = "title">Which quality do you value the most in a person?</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id = "choices">
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "10option1">Confidence</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "10option2">Optimism</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "10option3">Bravery</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "10option4">Intelligence</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "10option5">Charisma</h1>
+            </div>
+            <div class = "col-sm-2">
+              <h1 class = "option" id = "10option6">Sophistication</h1>
+            </div>
+        </div>
+        <script>
+          $("#10option1").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              ember++;
+              console.log("ember: "+ember);
+              $("#tenth").fadeOut();
+              $("#result").fadeIn(1400);
+              clicked = false;
+              if(ember>=cobalt && ember>=marigold && ember>=amazon && ember>=twilight && ember>=spark){
+                console.log(ember);
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(emberBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(cobalt>=ember && cobalt>=marigold && cobalt>=amazon && cobalt>=twilight && cobalt>=spark){
+                $("#ember").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(cobaltBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(marigold>=cobalt && marigold>=ember && marigold>=amazon && marigold>=twilight && marigold>=spark){
+                $("#cobalt").hide();
+                $("#ember").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(marigoldBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(amazon>=cobalt && amazon>=marigold && amazon>=ember && amazon>=twilight && amazon>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#ember").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(amazonBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(twilight>=cobalt && twilight>=marigold && twilight>=amazon && twilight>=ember && twilight>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#ember").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(twilightBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else {
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#ember").hide();
+                $('#result').css("background", "url(sparkBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+            }
+          });
+          $("#10option2").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              marigold++;
+              console.log("marigold: "+marigold);
+              $("#tenth").fadeOut();
+              $("#result").fadeIn(1400);
+              clicked = false;
+              if(ember>=cobalt && ember>=marigold && ember>=amazon && ember>=twilight && ember>=spark){
+                console.log(ember);
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(emberBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(cobalt>=ember && cobalt>=marigold && cobalt>=amazon && cobalt>=twilight && cobalt>=spark){
+                $("#ember").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(cobaltBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(marigold>=cobalt && marigold>=ember && marigold>=amazon && marigold>=twilight && marigold>=spark){
+                $("#cobalt").hide();
+                $("#ember").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(marigoldBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(amazon>=cobalt && amazon>=marigold && amazon>=ember && amazon>=twilight && amazon>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#ember").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(amazonBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(twilight>=cobalt && twilight>=marigold && twilight>=amazon && twilight>=ember && twilight>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#ember").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(twilightBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else {
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#ember").hide();
+                $('#result').css("background", "url(sparkBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+            }
+          });
+          $("#10option3").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              cobalt++;
+              console.log("cobalt : "+cobalt);
+              $("#tenth").fadeOut();
+              $("#result").fadeIn(1400);
+              clicked = false;
+              if(ember>=cobalt && ember>=marigold && ember>=amazon && ember>=twilight && ember>=spark){
+                console.log(ember);
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(emberBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(cobalt>=ember && cobalt>=marigold && cobalt>=amazon && cobalt>=twilight && cobalt>=spark){
+                $("#ember").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(cobaltBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(marigold>=cobalt && marigold>=ember && marigold>=amazon && marigold>=twilight && marigold>=spark){
+                $("#cobalt").hide();
+                $("#ember").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(marigoldBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(amazon>=cobalt && amazon>=marigold && amazon>=ember && amazon>=twilight && amazon>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#ember").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(amazonBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(twilight>=cobalt && twilight>=marigold && twilight>=amazon && twilight>=ember && twilight>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#ember").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(twilightBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else {
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#ember").hide();
+                $('#result').css("background", "url(sparkBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+            }
+          });
+          $("#10option4").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              amazon++;
+              console.log("amazon: "+amazon);
+              $("#tenth").fadeOut();
+              $("#result").fadeIn(1400);
+              clicked = false;
+              if(ember>=cobalt && ember>=marigold && ember>=amazon && ember>=twilight && ember>=spark){
+                console.log(ember);
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(emberBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(cobalt>=ember && cobalt>=marigold && cobalt>=amazon && cobalt>=twilight && cobalt>=spark){
+                $("#ember").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(cobaltBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(marigold>=cobalt && marigold>=ember && marigold>=amazon && marigold>=twilight && marigold>=spark){
+                $("#cobalt").hide();
+                $("#ember").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(marigoldBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(amazon>=cobalt && amazon>=marigold && amazon>=ember && amazon>=twilight && amazon>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#ember").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(amazonBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(twilight>=cobalt && twilight>=marigold && twilight>=amazon && twilight>=ember && twilight>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#ember").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(twilightBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else {
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#ember").hide();
+                $('#result').css("background", "url(sparkBack.png) no-repeat center center fixed");
+                  
+                  $('#result').css("background-size", "cover"); 
+              }
+            }
+          });
+          $("#10option5").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              spark++;
+              console.log("spark: "+spark);
+              $("#tenth").fadeOut();
+              $("#result").fadeIn(1400);
+              clicked = false;
+              if(ember>=cobalt && ember>=marigold && ember>=amazon && ember>=twilight && ember>=spark){
+                console.log(ember);
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(emberBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(cobalt>=ember && cobalt>=marigold && cobalt>=amazon && cobalt>=twilight && cobalt>=spark){
+                $("#ember").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(cobaltBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(marigold>=cobalt && marigold>=ember && marigold>=amazon && marigold>=twilight && marigold>=spark){
+                $("#cobalt").hide();
+                $("#ember").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(marigoldBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(amazon>=cobalt && amazon>=marigold && amazon>=ember && amazon>=twilight && amazon>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#ember").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(amazonBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(twilight>=cobalt && twilight>=marigold && twilight>=amazon && twilight>=ember && twilight>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#ember").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(twilightBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else {
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#ember").hide();
+                $('#result').css("background", "url(sparkBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+            }
+          });
+          $("#10option6").on("click", function(){
+            if(!clicked){
+              clicked = true;
+              twilight++;
+              console.log("twilight: "+twilight);
+              $("#tenth").fadeOut();
+              $("#result").fadeIn(1400);
+              clicked = false;
+              if(ember>=cobalt && ember>=marigold && ember>=amazon && ember>=twilight && ember>=spark){
+                console.log(ember);
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(emberBack.png) no-repeat center center fixed");
+                $('#result').css("background-size", "cover");
+              }
+              else if(cobalt>=ember && cobalt>=marigold && cobalt>=amazon && cobalt>=twilight && cobalt>=spark){
+                $("#ember").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(cobaltBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover");
+              }
+              else if(marigold>=cobalt && marigold>=ember && marigold>=amazon && marigold>=twilight && marigold>=spark){
+                $("#cobalt").hide();
+                $("#ember").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(marigoldBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover");
+              }
+              else if(amazon>=cobalt && amazon>=marigold && amazon>=ember && amazon>=twilight && amazon>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#ember").hide();
+                $("#twilight").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(amazonBack.jpg) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover"); 
+              }
+              else if(twilight>=cobalt && twilight>=marigold && twilight>=amazon && twilight>=ember && twilight>=spark){
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#ember").hide();
+                $("#spark").hide();
+                $('#result').css("background", "url(twilightBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover");
+              }
+              else {
+                $("#cobalt").hide();
+                $("#marigold").hide();
+                $("#amazon").hide();
+                $("#twilight").hide();
+                $("#ember").hide();
+                $('#result').css("background", "url(sparkBack.png) no-repeat center center fixed");
+                  $('#result').css("background-size", "cover");
+              }
+            }
+          });
+        </script>
+     </div>
+     <div id = "result">
+       <br>
+        <div id = "question"><h1 id = "resultTitle">YOU GOT:</h1></div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class = "col-sm-2"></div>
+        <div id = "ember" class = "col-sm-8">
+          <img src = "emberBackpack.png">
+          <a id = "resultText" href = "ember.html"style = "color:red;">EMBER!</a>
+        </div>
+        <div id = "cobalt" class = "col-sm-8">
+          <img src = "cobaltBackpack.png">
+          <a id = "resultText" href = "cobalt.html"style = "color:darkblue;">COBALT!</a>
+        </div>
+        <div id = "marigold" class = "col-sm-8">
+          <img src = "marigoldBackpack.png">
+          <a id = "resultText" href = "marigold.html"style = "color:darkgoldenrod;">MARIGOLD!</a>
+        </div>
+        <div id = "amazon" class = "col-sm-8">
+          <img src = "amazonBackpack.png">
+          <a id = "resultText" href = "amazon.html"style = "color:forestgreen;">AMAZON!</a>
+        </div>
+        <div id = "spark" class = "col-sm-8">
+          <img src = "sparkBackpack.png">
+          <a id = "resultText" href = "spark.html"style = "color:darkorange;">SPARK!</a>
+        </div>
+        <div id = "twilight" class = "col-sm-8">
+          <img src = "twilightBackpack.png">
+          <a id = "resultText" href = "twilight.html"style = "color:white;">TWILIGHT!</a>
+        </div>
+        <div class = "col-sm-2"></div>
+        <script>
+
+        </script>
+     </div>
+      <footer id = "footer">
+         <div class = 'row'>
+                <p id = "bottom">&nbsp;&nbsp;&nbsp;Virtual Enterprises</p>
+                <br>
+                <p id = "bottom">&nbsp;&nbsp;&nbsp;This is an official Virtual Enterprises International firm website for educational purposes only for 2017-2018 - "Journey"</p>
+            <div class = 'col-sm-9'>
+                <p id = "bottom">&nbsp;South Pasadena, CA</p>
+                <p id = "bottom">(626)-441-5820&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journey.vei@gmail.com</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p id = "bottom">© Journey, 2017 - South Pasadena High School</p>
+            </div>
+            <div class = 'col-sm-3'>
+                <img src = "vei.png" style="height:70px;width:70px;" id = "vei"><!--277x277-->
+            </div>
+        </div>
+      </footer>
+   </body>
+</html>

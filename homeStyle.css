@@ -1,0 +1,376 @@
+body{
+    overflow-y: scroll;
+    overflow-x: auto;
+    font-family: poiret;
+    color: black;
+    padding:0;
+    margin:0;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+@font-face {
+    font-family: poiret;
+    src: url(PoiretOne-Regular.ttf);
+}
+@font-face {
+    font-family: navFont;
+    src: url(Intro.otf)
+}
+#topUList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    border:0;
+    display:inline-block;
+}
+#navigationDiv{
+    opacity: 0;
+    font-family: poiret;
+    overflow:auto;
+}
+#topList{
+    float: left;
+    display:inline;
+}
+#logo{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+#topLink{
+    font-size: 29px;
+    display:inline;
+}
+#topLink: hover{
+    text-decoration: none;
+}
+#navigationDiv{
+    color: black;
+}
+#topList #topLink{
+    position: relative;
+    display:inline-block;
+    color:white;
+    padding: 23px;
+    text-decoration: none;
+    border-color: #34602f;
+}
+#topList #topLink:hover{
+    cursor: pointer;
+}
+#personalityHeading{
+    opacity: 0;
+    font-family: poiret;
+    font-size: 50px;
+    font-size: 5vw;
+}
+#personalityButton{
+    opacity:0;
+    font-family: poiret;
+    background-color:#34602f;
+    font-size: 30px;
+    border-color:maroon;
+}
+#introductionTitle{
+    opacity: 0;
+    font-weight: bold;
+    font-size: 100px;
+}
+#introduction{
+    width: 100vw;
+    padding:40px;
+    padding-bottom: 200px;
+}
+#images{
+    opacity: 0;
+}
+.homeNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.aboutNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.contactNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+#productNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top:3px;
+    padding-left:17px;
+    font-family: navFont;
+}
+.charityNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+#movie{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+#bottom{
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+footer {
+    position: inherit;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    overflow:hidden;
+    padding:0;
+}
+#vei{
+    float: right;
+    bottom:0;
+    right:0;
+}
+#mainImage{
+    background: url("Mountain.png") no-repeat fixed;
+    background-size: cover;
+    height: 1500px;
+    z-index: 0;
+}
+#mainTitle{
+    font-size: 200px;
+    font-weight: 900;
+    opacity:0;
+}
+#slogan{
+    font-weight:600;
+    font-size:65px;
+    opacity: 0;
+}
+#closed{
+    padding:0;
+    font-weight: 900;
+    margin:0;
+}
+#why{
+    background-size: cover;
+    height:inherit;
+    padding: 90px;
+    text-align: center;
+}
+#whyTitle{
+    font-size: 100px;
+    font-weight: 900;
+    opacity: 0;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+#whyText{
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 0;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+button{
+    display: block;
+	font-family: poiret;
+    background-color: #34602f;
+    font-size: 30px;
+	font-weight: bolder;
+    padding: 10px 15px;
+	margin: 20px auto;
+    border-color: maroon;
+    color: black;
+    text-shadow: 0 -1px 0 #000;
+	box-shadow: 0 10px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+}
+button:active
+{
+	box-shadow: 0 5px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+}
+footer{
+    text-shadow: none;
+}
+#journeyCompassDiv{
+    display: block;
+    text-align: center;
+    opacity: 0;
+}
+.row{
+    opacity:0;
+}
+#productHighlightsDiv{
+    min-width: 100%;
+    color: white;
+    text-shadow: none;
+}
+#productHighlights{
+    list-style: none;
+}
+.highlightTitle{
+    font-size: 31px;
+    font-weight: 900;
+}
+#hottest{
+    border: 0px;
+    border-color: black;
+    border-style: solid;/*
+    background-color: lightgray;
+    box-shadow: 10px 10px 0 #666, 0 0px 0 #444, 0 6px 6px rgba(0,0,0,0.6);*/
+    padding: 0;
+}
+#hottest:hover{/*
+    box-shadow: 10px 10px 0 rgba(100,100,0,0.6), 0 0px 0 rgba(100,100,0,0.6), 0 6px 6px rgba(100,100,0,0.6);*/
+}
+#hottestTop{
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0px;
+    min-width: 100%;
+    justify-content: center;
+    background-image: url(black.png);
+}
+#hottestMiddle{
+    padding:0;
+    margin:0;
+    text-align:center;
+    max-height: inherit;
+}
+#hottestBottom{
+    font-size: 31px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    background-image: url(black.png);
+}
+#hottestLink:hover{
+    color:red;
+}
+#hottestLink{
+    color:red;
+}
+#editorsTop{
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0px;
+    min-width: 100%;
+    justify-content: center;
+    background-image: url(black.png);
+}
+#editorsMiddle{
+    padding:0;
+    margin:0;
+    text-align:center;
+    max-height: inherit;
+}
+#editorsBottom{
+    font-size: 31px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    background-image: url(black.png);
+}
+#editorsLink:hover{
+    color:goldenrod;
+}
+#editorsLink{
+    color:goldenrod;
+}
+#homeBottom{
+    background: url("forest.png") no-repeat center center fixed;
+    background-size: cover;
+}
+.dropdown {
+    position: absolute;
+    display: block;
+    z-index: 999;
+}
+.dropdown-content {
+    display: none;
+    position:absolute;
+    z-index: 999;
+}
+
+#dropdown{
+    font-family: navFont;
+    font-size:45px;
+    color:black;
+    z-index: 999;
+    position:relative;
+}
+.dropdownmenu{
+    z-index: 999;
+    position:relative;
+}
+span{
+    text-decoration: none;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+#personalityQuiz{
+    border: 0px;
+    border-color: black;
+    border-style: solid;/*
+    background-color: lightgray;
+    box-shadow: 10px 10px 0 #666, 0 0px 0 #444, 0 6px 6px rgba(0,0,0,0.6);*/
+    padding-left: 50px;
+    padding-right: 30px;
+}
+#personalityTop{
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0px;
+    min-width: 100%;
+    justify-content: center;
+    background-image: url(black.png);
+}
+#personalityMiddle{
+    padding:0;
+    margin:0;
+    text-align:center;
+    max-height: inherit;
+}
+#personalityBottom{
+    font-size: 31px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    background-image: url(black.png);
+}
+#personalityLink:hover{
+    color:blue;
+}
+#personalityLink{
+    color:blue;
+}

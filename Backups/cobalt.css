@@ -1,0 +1,263 @@
+body {
+    background: url("cobaltBack.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: poiret;
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;  
+}
+@font-face {
+    font-family: poiret;
+    src: url(PoiretOne-Regular.ttf);
+}
+#navigationDiv {
+    opacity: 0;
+}
+#topUList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    border:0;
+}
+#navigationDiv {
+    font-family: poiret;
+    z-index: 999;
+}
+#topList {
+    float: left;
+}
+#logo {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+#topLink {
+    font-size: 29px;
+}
+#topList #topLink {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 23px;
+    text-decoration: none;
+    border-color: #34602f;
+}
+#topList #topLink:hover {
+    background-color: burlywood;
+}
+#productHeading {
+    font-size: 100px;
+    font-weight: bold;
+}
+#productDiv {
+    opacity: 0;
+    background-color: #fed36a;
+    padding:100px;
+}
+#productParagraph {
+    font-size: 50px;
+}
+.homeNav {
+    background: url("homeFootprint.png") no-repeat top center;
+    background-size: cover;
+    background-size: 125px 45px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.aboutNav {
+    background: url("aboutFootprint.png") no-repeat top center;
+    background-size: cover;
+    background-size: 125px 45px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.contactNav {
+    background: url("contactFootprint.png") no-repeat top center;
+    background-size: cover;
+    background-size: 125px 45px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.productNav {
+    background: url("productsFootprint.png") no-repeat bottom;
+    background-size: cover;
+    background-size: 125px 45px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.charityNav {
+    background: url("charityFootprint.png") no-repeat bottom;
+    background-size: cover;
+    background-size: 125px 45px;
+    max-height: 100%;
+    max-width: 100%;
+}
+#emberHeading {
+    font-size: 100px;
+    color: firebrick;
+    font-weight: bold;
+}
+#marigoldHeading {
+    font-size: 100px;
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+#amazonHeading {
+    font-size: 100px;
+    color: forestgreen;
+    font-weight: bold;
+}
+#twilightHeading {
+    font-size: 100px;
+    color: grey;
+    font-weight: bold;
+}
+#sparkHeading {
+    font-size: 100px;
+    color: darkorange;
+    font-weight: bold;
+}
+#cobaltHeading {
+    font-size: 100px;
+    color: darkblue;
+    font-weight: bold;
+}
+#emberDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: firebrick;
+}
+#cobaltDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: dodgerblue;
+}
+#marigoldDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: darkgoldenrod;
+}
+#amazonDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: forestgreen;
+}
+#sparkDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: darkorange;
+}
+#twilightDescription {
+    font-size: 50px;
+    font-weight: bold;
+    height: 600px;
+    background-color: grey;
+}
+#front {
+    height: 600px;
+    max-height: 600px;
+    text-align: center;
+}
+#backpack {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+#productSizes {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+.item {
+    height: 600px;
+}
+.active item {
+    height: 600px;
+}
+#bottom{
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+}
+footer {
+    position: inherit;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    overflow:hidden;
+    background: maroon;
+    padding:0;
+}
+#vei{  
+    float: right;
+    bottom:0;
+    right:0;
+}
+.col-sm-6{
+    align-items: center; 
+}
+button{
+    display: block;
+	font-family: poiret;
+    background-color: #34602f;
+    font-size: 30px;
+	font-weight: bolder;
+    padding: 10px 15px;
+	margin: 20px auto;
+    border-color: maroon;
+    color: black;
+    text-shadow: 0 -1px 0 #000;
+	box-shadow: 0 10px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+}
+button:active
+{
+	box-shadow: 0 5px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+}
+#head{
+    background: url("cobaltBack.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    height: 1000px;
+    padding:80px;
+}
+h1{
+    font-size: 200px;
+    font-weight: 900;
+    color:black;
+    text-align: center;
+}
+backpack{
+    text-align: center;
+}
+#descText{
+    font-size:80px;
+    font-weight:600;
+    max-width: 98%;
+    color:black;
+}
+#desc{
+    padding:180px;
+    background: url("cobaltBack2.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+#like{
+    font-size:80px;
+    color:black;
+}
+#end{
+    padding:180px;
+    background: url("cobaltBack2.jpeg") no-repeat center center fixed; 
+    background-size: cover;
+}
+footer{
+    text-shadow: none;
+}

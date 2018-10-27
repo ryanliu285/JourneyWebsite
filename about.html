@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Journey | Exploration Awaits You</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="aboutStyle.css"/>
+      <script src="functions.js"></script>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <script>
+         $(document).ready(function(){
+             $("#navigationDiv").fadeTo(1000, 1, function () {});
+             $("#productDiv").fadeTo(1000, 1 , function() {});
+             $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".productNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+             $(".productNav").stop(true,true).fadeTo(2500,1,function(){});
+             $(".aboutNav").stop(true,true).fadeTo(3500,1,function(){});
+             $(".charityNav").stop(true,true).fadeTo(4500,1,function(){});
+             $(".contactNav").stop(true,true).fadeTo(5500,1,function(){});
+         });
+         var hovered = false;
+      </script>
+      <link rel="icon" type="image/png" href="logo.png">
+   </head>
+      <body>
+      <div id = "navigationDiv">
+         <a href= "index.html"><img src ="logo.png" alt = "Logo and Slogan" style = "width: 100px; height: 84px;" id = "logo"></a>
+         <nav>
+            <ul id =  "topUList">
+               <li id = topList><a id = "topLink" href="index.html"><p class = "homeNav">Home</p></a></li>
+
+               <li id = "topList">
+                   <div class="dropdown">
+                       &nbsp;
+                       <a class="dropdown-toggle" id="menu1" data-toggle="dropdown" href = "products.html"><p id= "productNav">Products</p></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="ember.html"><p class = "homeNav">Ember</p></a></li>
+                        <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="marigold.html"><p class = "homeNav">Marigold</p></a></li>
+                        <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="cobalt.html"><p class = "homeNav">Cobalt</p></a></li>
+                        <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="amazon.html"><p class = "homeNav">Amazon</p></a></li>
+                        <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="spark.html"><p class = "homeNav">Spark</p></a></li>
+                        <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="twilight.html"><p class = "homeNav">Twilight</p></a></li>
+                    </ul>
+                   </div>
+                </li>
+                <li id = topList> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id = "topLink" class="aboutNav" href = "about.html"><p class = "homeNav">About</p></a></li>
+                <li id = topList><a id = "topLink" class="charityNav" href="charity.html"><p class = "homeNav">Charity</p></a></li>
+                <li id = topList><a id = "topLink" class="contactNav"href="contactUs.html"><p class = "homeNav">Contact Us!</p></a></li>
+            </ul>
+         </nav>
+      </div>
+      <script>
+              var state = false;
+              $("#productNav").on("click",function(){
+                  state = !state;
+                  if(state){
+                    $("#dropdown-menu").slideToggle(200);/*
+                      $("#navigationDiv").animate({height:500},200);
+                      $("#dropdown").animate({height:300},200);*/
+                    console.log("toggled");
+                  }
+            });
+      </script>
+          <div id = "statement">
+            <div>
+                <h1  style="display:inline; white-space:nowrap;" id = "aboutHeading">About Us</h1>
+            </div>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+            <h1>Our mission statement:</h1>
+            <h2>Journey’s personality pack’s challenge customers to step outside of their comfort zone and experience life differently. Through our packs, we help individuals explore their identities through the engagement of new experiences.</h2>
+        </div>
+       <div id = "what">
+            <h1>What Exactly Do We Sell?</h1>
+            <h2 align="center">Journey sells six different Personality Packages, that come in small, medium, and large sizes, named Trek, Excursion, and Expedition, respectively. Trek contains one outdoor activity, one indoor activity, new music to explore and a single miscellaneous item. Excursion doubles the items received, and Expedition contains four of each item.</h2>
+       </div>
+       <div id = "behind">
+         <h1>Behind The Scenes</h1>
+           <div class ="row">
+        <div class = "col-sm-9">
+         <h2>Working both as a company and as a team, Journey's 13 employees have created a company focusing on the identity and individuality of its customers. Journey manages to do all of this while maintaining corporate social responsibility through its charity, Walking Shield. </h2>
+        </div>
+               <div class = "col-sm-3">
+         <img id = "us" border = "5"src = "journey.jpg" style = "width: 512px; height: 384px;"><!--2048x1536-->
+               </div>
+               </div>
+               <footer>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                  <div class = 'row'>
+                         <p id = "bottom">&nbsp;&nbsp;&nbsp;Virtual Enterprises</p>
+                         <br>
+                         <p id = "bottom">&nbsp;&nbsp;&nbsp;This is an official Virtual Enterprises International firm website for educational purposes only for 2017-2018 - "Journey"</p>
+                     <div class = 'col-sm-9'>
+                         <p id = "bottom">&nbsp;South Pasadena, CA</p>
+                         <p id = "bottom">(626)-441-5820&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journey.vei@gmail.com</p>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <p id = "bottom">© Journey, 2017 - South Pasadena High School</p>
+                     </div>
+                     <div class = 'col-sm-3'>
+                         <img src = "vei.png" style="height:70px;width:70px;" id = "vei"><!--277x277-->
+                     </div>
+                 </div>
+               </footer>
+      </div>
+   </body>
+</html>

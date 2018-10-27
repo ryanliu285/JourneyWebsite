@@ -1,0 +1,155 @@
+body{
+    background-color: #fed36a;
+    background: url("forest.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: poiret;
+    font-weight:900;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+@font-face {
+    font-family: poiret;
+    src: url(PoiretOne-Regular.ttf);
+}
+#logo{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+#charityHeading{
+    font-size: 100px;
+}
+#walkingShield{
+    display: inline;
+    float: right;
+}
+h1{
+    font-size:45px;
+}
+#bottom{
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+}
+#vei{
+    float: right;
+    bottom:0;
+    right:0;
+}
+/* NOTE: Navigation Bar */
+#topUList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    border:0;
+    display:inline-block;
+}
+#navigationDiv{
+    font-family: poiret;
+    overflow:auto;
+}
+#topList{
+    float: left;
+    display:inline;
+}
+#logo{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+#topLink{
+    font-size: 29px;
+    display:inline;
+}
+#topLink: hover{
+    text-decoration: none;
+}
+#navigationDiv{
+    color: black;
+    overflow: visible;
+}
+#topList #topLink{
+    position: relative;
+    display:inline-block;
+    color:white;
+    padding: 23px;
+    text-decoration: none;
+    border-color: #34602f;
+}
+#topList #topLink:hover{
+    cursor: pointer;
+}
+@font-face {
+    font-family: navFont;
+    src: url(Intro.otf)
+}
+.homeNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.aboutNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.contactNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: navFont;
+}
+.dropdown {
+    position: absolute;
+    display: block;
+    z-index: 999;
+}
+.dropdown-content {
+    display: none;
+    position:absolute;
+    z-index: 999;
+}
+
+#dropdown{
+    font-family: navFont;
+    font-size:45px;
+    color:black;
+    z-index: 999;
+    position:relative;
+}
+.dropdownmenu{
+    z-index: 999;
+}
+span{
+    text-decoration: none;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+#productNav{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top:3px;
+    padding-left:17px;
+    font-family: navFont;
+}
+/* NOTE: Footer New*/
+footer{
+        position: absolute;
+        left: 0;
+        height: auto;
+        width: 100%;
+        overflow:hidden;
+        padding:0;
+}

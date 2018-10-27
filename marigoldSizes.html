@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Journey | Exploration Awaits You</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="marigoldSizes.css"/>
+      <script src="functions.js"></script>
+      <script>
+         $(document).ready(function(){
+             $("#navigationDiv").fadeTo(1000, 1, function () {});
+             $("#productDiv").fadeTo(1000, 1 , function() {});
+             $(".homeNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".productNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".aboutNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".charityNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".contactNav").stop(true,true).fadeTo(100,0,function(){});
+             $(".homeNav").stop(true,true).fadeTo(1000,1,function(){});
+             $(".productNav").stop(true,true).fadeTo(2500,1,function(){});
+             $(".aboutNav").stop(true,true).fadeTo(3500,1,function(){});
+             $(".charityNav").stop(true,true).fadeTo(4500,1,function(){});
+             $(".contactNav").stop(true,true).fadeTo(5500,1,function(){});
+         });
+         fadeScroll('#navigationDiv',true);
+         var hovered = false;
+      </script>
+      <link rel="icon" type="image/png" href="logo.png">
+   </head>
+   <body>
+     <div id = "navigationDiv">
+        <a href= "index.html"><img src ="logo.png" alt = "Logo and Slogan" style = "width: 100px; height: 84px;" id = "logo"></a>
+        <nav>
+           <ul id =  "topUList">
+              <li id = topList><a id = "topLink" href="index.html"><p class = "homeNav">Home</p></a></li>
+
+              <li id = "topList">
+                  <div class="dropdown">
+                      &nbsp;
+                      <a class="dropdown-toggle" id="menu1" data-toggle="dropdown" href = "products.html"><p id= "productNav">Products</p></a>
+                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="ember.html"><p class = "homeNav">Ember</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="marigold.html"><p class = "homeNav">Marigold</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="cobalt.html"><p class = "homeNav">Cobalt</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="amazon.html"><p class = "homeNav">Amazon</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="spark.html"><p class = "homeNav">Spark</p></a></li>
+                       <li id = "dropdown" role="presentation"><a role="menuitem" tabindex="-1" href="twilight.html"><p class = "homeNav">Twilight</p></a></li>
+                   </ul>
+                  </div>
+               </li>
+               <li id = topList> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id = "topLink" class="aboutNav" href = "about.html"><p class = "homeNav">About</p></a></li>
+              <li id = topList><a id = "topLink" class="charityNav" href="charity.html"><p class = "homeNav">Charity</p></a></li>
+              <li id = topList><a id = "topLink" class="contactNav"href="contactUs.html"><p class = "homeNav">Contact Us!</p></a></li>
+           </ul>
+        </nav>
+     </div>
+     <script>
+             var state = false;
+             $("#productNav").on("click",function(){
+                 state = !state;
+                 if(state){
+                   $("#dropdown-menu").slideToggle(200);/*
+                     $("#navigationDiv").animate({height:500},200);
+                     $("#dropdown").animate({height:300},200);*/
+                   console.log("toggled");
+                 }
+           });
+     </script>
+       <div id = "prefSize">
+       <div>
+           <h1>Please choose your preffered size:</h1>
+       </div>
+                <div class ="row" align = "center" >
+                <div class = "col-sm-4">
+                    <h1 id = "closed">Trek<br>($60)</h1>
+                    </div>
+                <div class = "col-sm-4">
+                    <h1 id = "closed">Excursion<br>($80)</h1>
+                </div>
+                <div class = "col-sm-4">
+                    <h1 id = "closed">Expedition<br>($120)</h1>
+                </div>
+                    </div>
+               <div class ="row" align = "center" id = "bags">
+                <div class = "col-sm-4">
+                    <a href ="https://portal.veinternational.org/buybuttons/us021801/btn/marigold-size-s-mas/"><img src = "closedMarigold.png" id = "closed1" style="height:110px; width:90px;" class = "imgs"></a><!--1356x1652-->
+                    <a href ="https://portal.veinternational.org/buybuttons/us021801/btn/marigold-size-s-mas/"><img src = "openMarigold.png" id = "open1" style="height:110px; width:90px;" class = "imgs"></a><!--2712x2633-->
+                </div>
+                <div class = "col-sm-4">
+                    <a href = "https://portal.veinternational.org/buybuttons/us021801/btn/marigold-size-m-mam/"><img src = "closedMarigold.png" id = "closed2" style="height:220px; width:180px;"class = "imgs"></a>
+                    <a href ="https://portal.veinternational.org/buybuttons/us021801/btn/marigold-size-m-mam/"><img src = "openMarigold.png" id = "open2" style="height:220px; width:180px;"class = "imgs"></a><!--2712x2633-->
+                </div>
+                <div class = "col-sm-4">
+                    <a href = "https://portal.veinternational.org/buybuttons/us021801/btn/marigold-size-l-mal/"><img src = "closedMarigold.png" id = "closed3" style="height:330px; width:271px;"class = "imgs"></a>
+                    <a href ="https://portal.veinternational.org/buybuttons/us021801/btn/marigold-size-l-mal/"><img src = "openMarigold.png" id = "open3" style="height:330px; width:271px;"class = "imgs"></a><!--2712x2633-->
+                </div>
+               <script>
+                   $(document).ready(function(){
+                       $("#open1").hide();
+                       $("#open2").hide();
+                       $("#open3").hide();
+                    });
+                    $('#closed1').mouseenter(function() {
+                        $(this).hide();
+                        $("#open1").show();
+                    });
+                   $('#closed2').mouseenter(function() {
+                        $(this).hide();
+                        $("#open2").show();
+                    });
+                   $('#closed3').mouseenter(function() {
+                        $(this).hide();
+                        $("#open3").show();
+                    });
+                   $('#open1').mouseleave(function() {
+                        $(this).hide();
+                        $("#closed1").show();
+                    });
+                   $('#open2').mouseleave(function() {
+                        $(this).hide();
+                        $("#closed2").show();
+                    });
+                   $('#open3').mouseleave(function() {
+                        $(this).hide();
+                        $("#closed3").show();
+                    });
+               </script>
+           </div>
+           </div>
+      <footer>
+        <br>
+         <div class = 'row'>
+                <p id = "bottom">&nbsp;&nbsp;&nbsp;Virtual Enterprises</p>
+                <br>
+                <p id = "bottom">&nbsp;&nbsp;&nbsp;This is an official Virtual Enterprises International firm website for educational purposes only for 2017-2018 - "Journey"</p>
+            <div class = 'col-sm-9'>
+                <p id = "bottom">&nbsp;South Pasadena, CA</p>
+                <p id = "bottom">(626)-441-5820&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journey.vei@gmail.com</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p id = "bottom">© Journey, 2017 - South Pasadena High School</p>
+            </div>
+            <div class = 'col-sm-3'>
+                <img src = "vei.png" style="height:70px;width:70px;" id = "vei"><!--277x277-->
+            </div>
+        </div>
+      </footer>
+   </body>
+</html>
