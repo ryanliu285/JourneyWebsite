@@ -150,7 +150,7 @@ footer {
     right:0;
 }
 #mainImage{
-    background: url("Mountain.png") no-repeat fixed;
+    background: url("mountain.png") no-repeat fixed;
     background-size: cover;
     height: 1500px;
     z-index: 0;
